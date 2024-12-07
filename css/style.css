@@ -33,3 +33,64 @@ body {
   margin-bottom: 10px;
   color: #555;
 }
+#planet-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+#planet-images figure {
+  text-align: center;
+  margin: 10px;
+}
+#planet-images .planet-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+#planet-images .planet-image:hover {
+  transform: scale(1.1);
+}
+#planet-data {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#planet-data thead {
+  background-color: #222;
+  color: #fff;
+}
+
+#planet-data th, #planet-data td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+#planet-data th {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#planet-data td {
+  font-size: 1em;
+}
+
+#planet-data tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#planet-data tr:hover {
+  background-color: #f1f1f1;
+}
+
+#planet-data .row-title {
+  text-align: left;
+  font-weight: bold;
+  background-color: #f4f4f9;
+}
